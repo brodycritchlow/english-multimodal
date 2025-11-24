@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="hero">
+        <h1>ABOLISH THE ELECTORAL COLLEGE.</h1>
+        <div class="scroll-arrow">
+            <span>↓</span>
+        </div>
+    </div>
+
+    <section class="content">
+        <div class="container">
+            <h2>Understanding the Electoral College</h2>
+            <p>The electoral college is built on the ideas of the constitutional convention in 1787, and has not changed
+                since—making this the most archaic system still left in our modern democracy. Other systems and
+                governing ideologies had ways to change with the times...</p>
+            <a href="pages/blogs/understanding_the_electoral_college.html" class="see-more">See more →</a>
+
+            <h2>Unequal Representation and Swing States</h2>
+            <p>Swing states are states that change up consistently in the presidential election, these take the majority
+                of the election focus—disregarding the states that are "safe states"...</p>
+            <a href="pages/blogs/unequal_representation_and_swing_states.html" class="see-more">See more →</a>
+
+            <h2>Alternative Voting Systems</h2>
+            <p>The Direct Popular Vote is a way to convert the true opinion of all people around the country into one
+                result. The "popular vote" is a count of everyone who voted for one candidate, and vice versa. By using
+                this system we get rid of the biases and faults in the Electoral College...</p>
+            <a href="pages/blogs/alternative_voting_systems.html" class="see-more">See more →</a>
+        </div>
+    </section>
+
+    <script>
+        const scrollArrow = document.querySelector('.scroll-arrow');
+
+        window.addEventListener('scroll', () => {
+            const currentScroll = window.pageYOffset;
+
+            if (currentScroll > 100) {
+                scrollArrow.classList.add('hidden');
+            } else {
+                scrollArrow.classList.remove('hidden');
+            }
+        });
+    </script>
+</body>
+
+</html>
